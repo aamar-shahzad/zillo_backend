@@ -12,13 +12,8 @@ router.get("/", async (req, res) => {
   }
 });
 route.post("/getEmail", async (req, res) => {
-  try {
-    const newData = new model({ experience: "34" });
-    const data = await newData.save();
-    return res.json(data);
-  } catch (error) {
-    return res.status(404).json({ message: error.message }); // TODO
-  }
+
+  
 });
 
 module.exports = router;
